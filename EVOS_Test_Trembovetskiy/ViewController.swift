@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     @IBOutlet weak var cvCars: UICollectionView!
 
+    
+    
     var screenSize: CGRect!
     var screenWidth: CGFloat!
     var screenHeight: CGFloat!
@@ -73,6 +75,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         return cell
     }
+    
+    // MARK: Methods for select/deselect cell
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         

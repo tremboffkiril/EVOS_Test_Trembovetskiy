@@ -25,6 +25,8 @@ extension UIColor {
     }
 }
 
+// MARK: Extension for CollectionView colour
+
 extension UICollectionView {
     func deselectAllItems(animated: Bool = false) {
         for indexPath in self.indexPathsForSelectedItems ?? [] {

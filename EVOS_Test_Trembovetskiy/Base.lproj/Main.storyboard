@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EVOS_Test_Trembovetskiy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,89 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gfi-Le-rLv">
+                                <rect key="frame" x="0.0" y="28" width="375" height="119"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="FUB-89-9sX"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2lo-aB-UTM">
+                                    <size key="itemSize" width="129" height="116"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="carCollectionCell" id="SjN-Uo-DEL" customClass="CarCollectionCell" customModule="EVOS_Test_Trembovetskiy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1.5" width="129" height="116"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="129" height="116"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZW-qV-h8I">
+                                                    <rect key="frame" x="0.0" y="72" width="129" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="g5r-e2-kkd"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="EuphemiaUCAS" family="Euphemia UCAS" pointSize="13"/>
+                                                    <color key="textColor" red="0.41176470588235292" green="0.38823529411764707" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="333-ga-9MH">
+                                                    <rect key="frame" x="0.0" y="113" width="129" height="5"/>
+                                                    <color key="backgroundColor" red="0.45882352941176469" green="0.72941176470588232" blue="0.88235294117647056" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="5" id="OID-sd-FtM"/>
+                                                    </constraints>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_car_bus" translatesAutoresizingMaskIntoConstraints="NO" id="g01-JP-ACX">
+                                                    <rect key="frame" x="34" y="13" width="60" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="K8C-R8-gMv"/>
+                                                        <constraint firstAttribute="width" constant="60" id="soi-qR-UPV"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="LZW-qV-h8I" secondAttribute="trailing" id="8wa-Q8-L45"/>
+                                            <constraint firstAttribute="bottom" secondItem="333-ga-9MH" secondAttribute="bottom" constant="-2" id="9al-Lm-fxd"/>
+                                            <constraint firstItem="g01-JP-ACX" firstAttribute="centerX" secondItem="SjN-Uo-DEL" secondAttribute="centerX" id="9nS-ql-FUc"/>
+                                            <constraint firstItem="g01-JP-ACX" firstAttribute="top" secondItem="SjN-Uo-DEL" secondAttribute="top" constant="13" id="Jas-dc-AWH"/>
+                                            <constraint firstItem="LZW-qV-h8I" firstAttribute="leading" secondItem="SjN-Uo-DEL" secondAttribute="leading" id="VlQ-DP-8hn"/>
+                                            <constraint firstAttribute="trailing" secondItem="333-ga-9MH" secondAttribute="trailing" id="c9T-Bi-R6I"/>
+                                            <constraint firstItem="333-ga-9MH" firstAttribute="leading" secondItem="SjN-Uo-DEL" secondAttribute="leading" id="kmP-ea-lgZ"/>
+                                            <constraint firstItem="LZW-qV-h8I" firstAttribute="top" secondItem="g01-JP-ACX" secondAttribute="bottom" constant="9" id="ptT-O1-WTf"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imTypeCar" destination="g01-JP-ACX" id="cFJ-69-oaZ"/>
+                                            <outlet property="labTypeName" destination="LZW-qV-h8I" id="OX4-rA-vbP"/>
+                                            <outlet property="viewActivity" destination="333-ga-9MH" id="gpk-t3-Yyu"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gfi-Le-rLv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5qc-ID-SXa"/>
+                            <constraint firstAttribute="trailing" secondItem="gfi-Le-rLv" secondAttribute="trailing" id="HaU-7x-Rtf"/>
+                            <constraint firstItem="gfi-Le-rLv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="mvJ-Id-5t9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cvCars" destination="gfi-Le-rLv" id="2AC-Kk-0wG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_car_bus" width="105" height="52"/>
+    </resources>
 </document>

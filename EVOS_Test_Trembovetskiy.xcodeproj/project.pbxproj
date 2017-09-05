@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E909C4E1F5D8011008CF381 /* CarCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E909C4D1F5D8011008CF381 /* CarCollectionCell.swift */; };
+		9E909C501F5E0040008CF381 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E909C4F1F5E0040008CF381 /* Config.swift */; };
 		9EA5A2891F5D7A420094887D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5A2881F5D7A420094887D /* AppDelegate.swift */; };
 		9EA5A28B1F5D7A420094887D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5A28A1F5D7A420094887D /* ViewController.swift */; };
 		9EA5A28E1F5D7A420094887D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA5A28C1F5D7A420094887D /* Main.storyboard */; };
 		9EA5A2911F5D7A420094887D /* EVOS_Test_Trembovetskiy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5A28F1F5D7A420094887D /* EVOS_Test_Trembovetskiy.xcdatamodeld */; };
 		9EA5A2931F5D7A420094887D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EA5A2921F5D7A420094887D /* Assets.xcassets */; };
 		9EA5A2961F5D7A420094887D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA5A2941F5D7A420094887D /* LaunchScreen.storyboard */; };
+		9EA5A29E1F5D7B3E0094887D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA5A29D1F5D7B3E0094887D /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E909C4D1F5D8011008CF381 /* CarCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarCollectionCell.swift; sourceTree = "<group>"; };
+		9E909C4F1F5E0040008CF381 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		9EA5A2851F5D7A420094887D /* EVOS_Test_Trembovetskiy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EVOS_Test_Trembovetskiy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA5A2881F5D7A420094887D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9EA5A28A1F5D7A420094887D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		9EA5A2921F5D7A420094887D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9EA5A2951F5D7A420094887D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9EA5A2971F5D7A420094887D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EA5A29D1F5D7B3E0094887D /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				9EA5A2941F5D7A420094887D /* LaunchScreen.storyboard */,
 				9EA5A2971F5D7A420094887D /* Info.plist */,
 				9EA5A28F1F5D7A420094887D /* EVOS_Test_Trembovetskiy.xcdatamodeld */,
+				9EA5A29D1F5D7B3E0094887D /* Extensions.swift */,
+				9E909C4D1F5D8011008CF381 /* CarCollectionCell.swift */,
+				9E909C4F1F5E0040008CF381 /* Config.swift */,
 			);
 			path = EVOS_Test_Trembovetskiy;
 			sourceTree = "<group>";
@@ -143,6 +152,9 @@
 				9EA5A28B1F5D7A420094887D /* ViewController.swift in Sources */,
 				9EA5A2911F5D7A420094887D /* EVOS_Test_Trembovetskiy.xcdatamodeld in Sources */,
 				9EA5A2891F5D7A420094887D /* AppDelegate.swift in Sources */,
+				9EA5A29E1F5D7B3E0094887D /* Extensions.swift in Sources */,
+				9E909C4E1F5D8011008CF381 /* CarCollectionCell.swift in Sources */,
+				9E909C501F5E0040008CF381 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +318,7 @@
 				9EA5A29C1F5D7A420094887D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
